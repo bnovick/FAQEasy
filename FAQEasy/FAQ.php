@@ -8,7 +8,7 @@
 get_header(); 
 global $wp_query;
 $postid = $wp_query->post->ID;
-//Queries custom meta to display
+//Queries custom meta to call
 $post_meta_data = get_post_custom($post->ID);
 $faq = unserialize($post_meta_data['faq_repeatable'][0]);
 
